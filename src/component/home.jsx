@@ -1,7 +1,15 @@
 import { ArrowRight } from "lucide-react";
 import Footer from "./footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+   const routes= useNavigate()
+  function contactBtn() {
+    routes("/contact")
+  }
+  function workBtn() {
+    routes("/work")
+  }
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero section */}
@@ -29,7 +37,7 @@ export default function Home() {
 
         {/* Buttons */}
         <div className="mt-4 flex items-center gap-5">
-          <button className="group flex cursor-pointer items-center gap-2 rounded-xl bg-yellow-500 p-3 font-bold text-black transition hover:bg-yellow-300">
+          <button onClick={workBtn} className="group flex cursor-pointer items-center gap-2 rounded-xl bg-yellow-500 p-3 font-bold text-black transition hover:bg-yellow-300">
             View my work{" "}
             <ArrowRight
               size={20}
@@ -37,7 +45,7 @@ export default function Home() {
             />
           </button>
 
-          <button className="cursor-pointer rounded-xl border border-gray-700 px-7 py-3 font-bold text-white transition hover:border-gray-400 hover:bg-gray-950">
+          <button onClick={contactBtn} className="cursor-pointer rounded-xl border border-gray-700 px-7 py-3 font-bold text-white transition hover:border-gray-400 hover:bg-gray-950">
             Get in touch
           </button>
         </div>
