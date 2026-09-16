@@ -2,6 +2,9 @@ import { useNavigate } from "react-router-dom";
 import Footer from "./footer";
 import Project from "./project";
 import { MoveUpRight } from "lucide-react";
+import dagroImage from "../assets/D-agro link.jpeg";
+import talentbridgeImage from "../assets/Talentbridge.png";
+import tastyBitesImage from "../assets/TastyBites.png";
 
 export default function Work() {
   const route= useNavigate()
@@ -25,7 +28,7 @@ export default function Work() {
        <div></div> */}
         <Project
           sn="01"
-          image="./src/assets/D-agro link.jpeg"
+          image={dagroImage}
           name="D-AGRO LINK"
           description="A platform connecting farmers with different agricultural input
             suppliers while helping improve access to trusted farm inputs."
@@ -39,7 +42,7 @@ export default function Work() {
         />
         <Project
           sn="02"
-          image="./src/assets/Talentbridge.png"
+          image={talentbridgeImage}
           name="TalentBridge NG"
           description="A skills-to-opportunity platform that helps users move from learning to practical experience, portfolio building and verified opportunities"
           techStack1="React"
@@ -50,7 +53,7 @@ export default function Work() {
           highlight3="opportunity matching"
           reverse
         />
-        <Project sn="03" image="./src/assets/TastyBites.png" name="Tasty Bites" description="A responsive web application designed to a simple and engaging food browsing experience" techStack1="JavaScript" techStack2="Tailwind CSS" techStack3="React Native" techStack4="React" highlight1="Responsive restuarant interface" highlight2="Dynamic food/product rendering" highlight3="React routing and reuseable components" />
+        <Project sn="03" image={tastyBitesImage} name="Tasty Bites" description="A responsive web application designed to a simple and engaging food browsing experience" techStack1="JavaScript" techStack2="Tailwind CSS" techStack3="React Native" techStack4="React" highlight1="Responsive restuarant interface" highlight2="Dynamic food/product rendering" highlight3="React routing and reuseable components" />
 
         <div className="flex  flex-col gap-7 items-center md:flex-row md:justify-between p-7 bg-[#111113] border-gray-700 rounded-2xl md:rounded-xl">
           <div>

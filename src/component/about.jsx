@@ -1,5 +1,6 @@
 import { Compass, Heart, SeparatorVertical } from "lucide-react";
 import Footer from "./footer";
+import profileImage from "../assets/techme1.png";
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
         <div className=" mt-[7%] grid grid-cols-1 md:grid-cols-3 gap-7.5 min-h-[60vh]">
           <div className="col-span-1 ">
             <img
-              src="/src/assets/techme1.png"
+              src={profileImage}
               alt="my work"
               className="rounded-3xl object-cover h-[60%] w-full"
             />
